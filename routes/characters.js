@@ -3,7 +3,7 @@ const express = require("express")
 const router = express.Router()
 
 router.get("/", (req, res) => {
-  const { id } = req.params
+  // All characters
   const characters = require(`../assets/json/characters.json`)
   res.status(200).json(characters)
 })
@@ -12,6 +12,12 @@ router.get("/staff", (req, res) => {
   const houseCharacters = require(`../assets/json/staff/staff.json`)
   res.status(200).json(houseCharacters)
 })
+
+router.get("/students", (req, res) => {
+  const houseCharacters = require(`../assets/json/students/students.json`)
+  res.status(200).json(houseCharacters)
+})
+
 router.get("/:id", (req, res) => {
   const { id } = req.params
   const characters = require(`../assets/json/id/${id}.json`)
