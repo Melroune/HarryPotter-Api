@@ -8,12 +8,22 @@ router.get("/", (req, res) => {
   res.status(200).json(characters)
 })
 
+router.get("/staff", (req, res) => {
+  const houseCharacters = require(`../assets/json/staff/staff.json`)
+  res.status(200).json(houseCharacters)
+})
 router.get("/:id", (req, res) => {
   const { id } = req.params
   const characters = require(`../assets/json/id/${id}.json`)
   res.status(200).json(characters)
 })
 
-// router.get("/house/:")
+router.get("/houses/:house", (req, res) => {
+  console.log(req.params)
+  // Gryffindor - Hufflepuff - Ravenclaw - Slytherin - Unknown
+  const { house } = req.params
+  const houseCharacters = require(`../assets/json/houses/${house}.json`)
+  res.status(200).json(houseCharacters)
+})
 
 module.exports = router
