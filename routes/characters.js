@@ -9,13 +9,13 @@ router.get("/", (req, res) => {
 })
 
 router.get("/staff", (req, res) => {
-  const houseCharacters = require(`../assets/json/staff/staff.json`)
-  res.status(200).json(houseCharacters)
+  const staffCharacters = require(`../assets/json/staff/staff.json`)
+  res.status(200).json(staffCharacters)
 })
 
 router.get("/students", (req, res) => {
-  const houseCharacters = require(`../assets/json/students/students.json`)
-  res.status(200).json(houseCharacters)
+  const studentsCharacters = require(`../assets/json/students/students.json`)
+  res.status(200).json(studentsCharacters)
 })
 
 router.get("/:id", (req, res) => {
@@ -30,17 +30,6 @@ router.get("/houses/:house", (req, res) => {
   const { house } = req.params
   const houseCharacters = require(`../assets/json/houses/${house}.json`)
   res.status(200).json(houseCharacters)
-})
-router.get("/spell", (req, res) => {
-  // All spell
-  fetch(`../assets/json/spell/spell.json`)
-    .then(
-      spell => console.log("spell : ", spell) || res.status(200).json(spell)
-    )
-    .catch(
-      err =>
-        console.log("err =========== ", err) || res.send(200).res.json(spell)
-    )
 })
 
 module.exports = router
