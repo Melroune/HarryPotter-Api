@@ -3,7 +3,7 @@ const router = express.Router()
 
 router.get("/", (req, res) => {
   // All spell
-  const spell = require("../assets/json/spell/spell.json")
+  const spell = require("../assets/json/spell.json")
   res.status(200).json(spell)
 })
 // spell by id in progress
