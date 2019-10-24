@@ -31,5 +31,14 @@ router.get("/houses/:house", (req, res) => {
   const houseCharacters = require(`../assets/json/houses/${house}.json`)
   res.status(200).json(houseCharacters)
 })
+router.get("/spell", (req, res) => {
+  // All spell
+  require(`../assets/json/spell/spell.json`)
+    .then(spell => res.status(200).json(spell))
+    .catch(
+      err =>
+        console.log("err =========== ", err) || res.send(200).res.json(spell)
+    )
+})
 
 module.exports = router
