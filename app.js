@@ -4,7 +4,7 @@ const morgan = require("morgan")
 
 const routes = require("./routes/index")
 const app = express()
-const port = 4242
+const PROT = process.env.PROT || 4242
 
 app.use(morgan("dev"))
 app.use(morgan(":method :url :status :res[content-length] - :response-time "))
@@ -20,5 +20,8 @@ app.use("/spell", routes.spell)
 app.get("/", (req, res) => {
   res.status(200).send("je suis dans /")
 })
+// if(process.env.NODE_ENV === "production"){
 
-app.listen(port, console.log(`http://localhost:${port}`))
+// }
+
+app.listen(PROT, console.log(`http://localhost:${PROT}`))
