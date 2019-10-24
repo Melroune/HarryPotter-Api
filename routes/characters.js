@@ -14,7 +14,7 @@ router.get("/staff", (req, res) => {
 })
 
 router.get("/students", (req, res) => {
-  const studentsCharacters = require(`../assets/json/students/students.json`)
+  const studentsCharacters = require(`../assets/json/students.json`)
   res.status(200).json(studentsCharacters)
 })
 
