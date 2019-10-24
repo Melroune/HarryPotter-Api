@@ -1,10 +1,9 @@
 const express = require("express")
-
+const spell = require("../assets/json/spell/spell.json")
 const router = express.Router()
 
 router.get("/", async (req, res) => {
   // All spell
-  const spell = await require("../assets/json/spell/spell.json")
 
   res.status(200).json(spell)
 })
