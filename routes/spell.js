@@ -2,9 +2,9 @@ const express = require("express")
 
 const router = express.Router()
 
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
   // All spell
-  const spell = require(`../assets/json/spell/spell.json`)
+  const spell = await require(`../assets/json/spell/spell.json`)
   res.status(200).json(spell)
 })
 // spell by id in progress
