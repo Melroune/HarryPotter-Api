@@ -16,8 +16,8 @@ app.use(bodyParser.json())
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use("/characters", routes.characters)
 app.use("/spell", routes.spell)
+app.use("/characters", routes.characters)
 
 app.get("/", (req, res) => {
   res.status(200).send("je suis dans /")
