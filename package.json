@@ -2,12 +2,11 @@
   "name": "HarryPoterAPI",
   "version": "1.0.0",
   "description": "Harry potter api",
-  "main": "index.js",
+  "main": "app.js",
   "author": "Melroune",
   "license": "MIT",
   "scripts": {
-    "start": "node app.js",
-    "startbis": "node --experimental-modules app.js"
+    "start": "node app.js"
   },
   "type": "module",
   "dependencies": {
