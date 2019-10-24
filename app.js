@@ -15,6 +15,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use("/characters", routes.characters)
+app.use("/spell", routes.spell)
 
 app.get("/", (req, res) => {
   res.status(200).send("je suis dans /")
