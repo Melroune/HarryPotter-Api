@@ -3,9 +3,9 @@ const router = express.Router()
 
 router.get("/", (req, res) => {
   // All spell
-  require(`../assets/json/spell/spell.json`)
-    .then(spell => res.status(200).json(spell))
-    .catch(err => console.log("err =========== ", err))
+  const spell = fetch("../assets/json/spell/spell.json")
+  spell.then(spell => res.status(200).json(spell))
+  spell.catch(err => res.status(200).json(err))
 })
 // spell by id in progress
 // router.get("/:id", (req, res) => {

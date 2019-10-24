@@ -33,8 +33,10 @@ router.get("/houses/:house", (req, res) => {
 })
 router.get("/spell", (req, res) => {
   // All spell
-  require(`../assets/json/spell/spell.json`)
-    .then(spell => res.status(200).json(spell))
+  fetch(`../assets/json/spell/spell.json`)
+    .then(
+      spell => console.log("spell : ", spell) || res.status(200).json(spell)
+    )
     .catch(
       err =>
         console.log("err =========== ", err) || res.send(200).res.json(spell)
