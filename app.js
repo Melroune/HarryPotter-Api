@@ -4,7 +4,7 @@ const morgan = require("morgan")
 
 const routes = require("./routes/index")
 const app = express()
-const PROT = process.env.PROT || 4242
+const PORT = process.env.PORT || 4242
 
 app.use(morgan("dev"))
 app.use(morgan(":method :url :status :res[content-length] - :response-time "))
@@ -24,4 +24,4 @@ app.get("/", (req, res) => {
 
 // }
 
-app.listen(PROT, console.log(`http://localhost:${PROT}`))
+app.listen(PORT, console.log(`http://localhost:${PORT}`))
