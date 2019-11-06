@@ -16,7 +16,12 @@ app.use(bodyParser.json())
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
+<<<<<<< HEAD
+app.use("/spell", routes.spell)
+app.use("/af", routes.af)
+=======
 app.use("/houses", routes.houses)
+>>>>>>> 864dafb6e83001854f21cd4eee223f0f63df00cc
 app.use("/characters", routes.characters)
 app.use("/spell", routes.spell)
 

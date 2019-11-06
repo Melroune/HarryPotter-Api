@@ -1,5 +1,6 @@
 const characters = require("./characters")
-const spell = require("./spell")
 const houses = require("./houses")
+const spell = require("./spell")
+const af = require("./af")
 
-module.exports = { characters, spell, houses }
+module.exports = { characters, spell, houses, af }

@@ -1,0 +1,63 @@
+[
+    {
+    "id":1,
+    "affirmation":"Je suis à l'aise avec les gens"
+},
+{
+    "id": 2,
+    "affirmation":"Je suis une personne sociable"
+},
+{
+    "id": 3,
+    "affirmation":"J'aime converser avec des inconnus"
+},
+{
+    "id": 4,
+    "affirmation":"j'ai plaisir à prendre la parole en publique"
+},
+{
+    "id": 5,
+    "affirmation":"Les relations humaines m'épanouissent"
+},
+{
+    "id": 6,
+    "affirmation":"Je sais m'exprimer correctement et clairement"
+},
+{
+    "id": 7,
+    "affirmation":"J'ai la facilité à créer du lien"
+},
+{
+    "id": 8,
+    "affirmation":"Je suis extravertie"
+},
+{
+    "id": 9,
+    "affirmation":"J'ai confiance en mes capacités"
+},
+{
+    "id":10,
+    "affirmation":"j'ose m’affirmer devant les autres"
+},
+{
+    "id":11,
+    "affirmation":"j'aime la personne que je suis"
+},
+{
+    "id":12,
+    "affirmation":"j'accueille en moi ma différence"
+},
+{
+    "id":13,
+    "affirmation":"j'accepte le changement"
+},
+{
+    "id":14,
+    "affirmation":"j'ai la force en moi pour m'aider à vaincre ma timidité"
+},
+{
+    "id":15,
+    "affirmation":"j'ai conscience de mes propres qualités"
+}
+
+]
