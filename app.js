@@ -17,6 +17,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use("/spell", routes.spell)
+app.use("/af", routes.af)
 app.use("/characters", routes.characters)
 
 app.get("/", (req, res) => {
